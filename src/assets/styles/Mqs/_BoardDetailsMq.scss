@@ -1,0 +1,296 @@
+@media only screen and (max-width: 880px) {
+
+    .board-details-actions {
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .task-list-container {
+
+        .header-title-container {
+            grid-template-columns: 38px 40px 315px repeat(6, 140px) 1fr !important;
+        }
+
+        .task-list {
+            .task-item {
+
+                #task-title {
+                    .editible-task-title {
+                        margin-left: 0;
+                        max-width: 240px;
+                    }
+                }
+
+                &.sticky-title {
+                    width: 315px !important;
+
+                }
+
+                .btn-open-task {
+                    display: none;
+                }
+
+            }
+        }
+
+        .task-list-add {
+            .task-add-btn {
+                width: rem(315px);
+            }
+
+        }
+
+        .task-list-summary-wrapper {
+            grid-template-columns: 38px 355px repeat(6, 140px) 1fr !important;
+
+            .summary-scroll-hide-div {
+                left: 355px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    .right-panel-container {
+        display: none;
+    }
+
+    .board-details-layout {
+        column-gap: 3px;
+
+        .board-details-container {
+
+            .header-wrapper {
+                .board-header {
+                    .board-title {
+                        flex-wrap: wrap;
+                        gap: .5rem;
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+
+    .task-details-container {
+        width: 100%;
+        left: 0;
+
+    }
+
+    .activity-list-item {
+        gap: .5rem;
+
+        .activity-type {
+            flex-direction: column;
+        }
+
+        .created {
+            flex-direction: column;
+
+        }
+
+        .title {
+            max-width: 130px;
+        }
+    }
+
+
+    .task-list-container {
+        .header-title-container {
+            grid-template-columns: 38px 40px 250px repeat(6, 140px) 1fr !important;
+        }
+
+        .task-list {
+            .task-item {
+                #task-title {
+                    .editible-task-title {
+                        margin-left: 0;
+                        max-width: 180px;
+                    }
+                }
+
+                &.sticky-title {
+                    width: 250px !important;
+
+                }
+            }
+        }
+
+
+        .task-list-add {
+            .task-add-btn {
+                width: rem(250px);
+                padding-left: 0;
+            }
+
+        }
+
+        .task-list-summary-wrapper {
+            grid-template-columns: 38px 290px repeat(6, 140px) 1fr !important;
+
+            .summary-scroll-hide-div {
+                left: 290px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .side-bar-container {
+        display: none;
+    }
+
+    .board-details-layout {
+        column-gap: 0px;
+    }
+
+    .board-desc-backdrop {
+        .ai-modal-container {
+            width: 100%;
+            height: 400px;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+
+            .close-btn {
+                border-radius: 1rem;
+            }
+
+            .ai-robot-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .explaining-txt {
+                font-size: 1rem;
+                left: 0;
+            }
+
+            .record-btn-container {
+                margin-top: .8rem;
+                transform: translate(-35%);
+            }
+
+            .center {
+                margin-top: 25px;
+            }
+        }
+
+    }
+
+    .board-details-layout {
+        .board-details-container {
+
+            .header-description {
+                display: none;
+            }
+
+            // .header-wrapper {
+            //     // padding-left: 10px;
+            //     // padding-right: 10px;
+            // }
+
+            .board-details-actions {
+                padding-bottom: 5px;
+                // padding-left: 10px;
+                // padding-right: 10px;
+                // display: none;
+            }
+        }
+    }
+
+    // .group-preview-container {
+    //     .collapsible-header-wrapper {
+    //         // .side-menu-btn-container {
+    //         //     // width: 10px;
+    //         // }
+    //     }
+    // }
+
+
+    .task-list-container {
+        // .side-menu-btn-container {
+        //     // width: 10px;
+        // }
+
+        .header-title-container {
+            grid-template-columns: 38px 40px 200px repeat(6, 140px) 1fr !important;
+            // grid-template-columns: 10px 40px 200px repeat(6, 140px) 1fr !important;
+
+            // .header-title-side-wrapper {
+            //     // left: 10px;
+            //     // border-top: 1px solid var(--ui-border-color);
+            // }
+
+            // .header-title {
+            //     // &.sticky-header-title {
+            //     //     // left: 50px;
+            //     // }
+            // }
+        }
+
+        .task-list {
+            .task-item {
+                #task-title {
+                    .editible-task-title {
+                        max-width: 130px;
+                    }
+                }
+
+                // &.sticky-checkbox {
+                //     // left: 10px;
+                // }
+
+                &.sticky-title {
+                    // left: 50px;
+                    width: rem(200px) !important;
+                }
+            }
+        }
+
+
+        .task-list-add {
+
+            // &.group-grid {
+            //     // grid-template-columns: 10px 40px 480px repeat(6, 140px) 1fr !important;
+            // }
+
+            .task-add-btn {
+                width: rem(200px);
+                // left: 50px;
+            }
+
+            // .task-list-add-side {
+            //     // left: 10px;
+            //     // border-bottom: 1px solid var(--ui-border-color);
+            // }
+
+        }
+
+        .task-list-summary-wrapper {
+            grid-template-columns: 38px 240px repeat(6, 140px) 1fr !important;
+            // grid-template-columns: 10px 240px repeat(6, 140px) 1fr !important;
+
+            // .task-list-summary-emptycell-left {
+            //     // left: 10px;
+            // }
+
+            .summary-scroll-hide-div {
+                left: 240px;
+            }
+        }
+    }
+
+    .activity-list-item {
+        .title {
+            max-width: 90px;
+        }
+    }
+}

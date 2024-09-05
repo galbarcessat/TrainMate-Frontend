@@ -1,0 +1,21 @@
+@function rem($size) {
+    $remSize: calc($size / 16px);
+    @return ($remSize) * 1rem;
+}
+
+@function em($pixels, $context: 16px) {
+    @return calc($pixels/$context) * 1em;
+}
+
+@function lh($pixels, $context: 16px) {
+    @return calc($pixels/$context);
+}
+
+@function random-color() {
+    $red: random(255);
+    $green: random(255);
+    $blue: random(255);
+    $alpha: 1; // You can adjust the alpha value if needed
+  
+    @return rgba($red, $green, $blue, $alpha);
+  }
