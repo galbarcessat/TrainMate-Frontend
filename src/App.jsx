@@ -1,26 +1,23 @@
 
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
-import { Provider } from 'react-redux'
-import { store } from './store/store'
 import './assets/styles/main.scss'
-
 import { HomePage } from './pages/HomePage'
+import { Header } from './cmps/Header'
 
 export function App() {
 
   return (
-    <Provider store={store}>
-      <Router>
-        <Routes>
+    <Router>
+      <Header />
+      <Routes>
 
-          <Route element={<HomePage />} path="/" />
-          {/* <Route path="/auth">
+        <Route element={<HomePage />} path="/" />
+        {/* <Route path="/auth">
           <Route path="login" element={<LoginSignup />} />
           <Route path="sign-up" element={<LoginSignup />} />
         </Route> */}
-        </Routes>
-      </Router>
-    </Provider>
+      </Routes>
+    </Router>
   )
 }
 

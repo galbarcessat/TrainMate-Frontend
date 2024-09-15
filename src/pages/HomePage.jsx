@@ -1,6 +1,8 @@
 export function HomePage() {
 
     return (
-        <div>Home page!</div>
+        <div>
+            <h1>Helloooo</h1>
+        </div>
     )
 }
